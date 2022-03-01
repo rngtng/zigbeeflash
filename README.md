@@ -5,7 +5,10 @@ Docker Image to flash SONOFF Zigbee 3.0 USB Dongle Plus
 
 ```
 cd /tmp
-wget https://github.com/rngtng/zigbeeflash/archive/refs/heads/main.zip
+curl -L https://github.com/rngtng/zigbeeflash/tarball/main -o main.tgz
+tar -xzf main.tgz
+cd rngtng-zigbeeflash-ef9fb80
+make build
 
 ```
 
