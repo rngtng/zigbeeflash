@@ -12,4 +12,6 @@ ARG CC_FILE=firmware.zip
 ADD https://codeload.github.com/JelmerT/cc2538-bsl/zip/master $CC_FILE
 RUN unzip $CC_FILE && rm -rf $CC_FILE
 
+COPY uartLog.py .
+
 ENV ADDR=00124b0018e85c28
