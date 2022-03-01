@@ -1,6 +1,6 @@
 FROM python:latest
 
-RUN pip install pyserial intelhex python-magic
+RUN pip install pyserial intelhex python-magic gevent
 
 WORKDIR /root
 
